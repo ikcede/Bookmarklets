@@ -1,0 +1,38 @@
+<a href = 'javascript:function countWords(a){if(!a||a==="")return 0;a=a.replace(/(^\s*)|(\s*$)/gi,"");a=a.replace(/[ ]{2,}/gi," ");a=a.replace(/\n /,"\n");return a.split(" ").length}var txtanalyze=function(){if(window.getSelection){return[countWords(window.getSelection().toString()),window.getSelection().toString().length]}return[0,0]};var abox=document.createElement("div");abox.setAttribute("style","position:fixed;left:5%;top:5%;width:110px;height:auto;font-size:14px;z-index:1000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 2px 4px;");abox.setAttribute("id","analyticsbox");var analyticValues=txtanalyze();abox.appendChild(document.createTextNode("WC: "+analyticValues[0]+" words \n\rChars: "+analyticValues[1]));document.body.appendChild(abox);abox.addEventListener("click",function(){abox.style.display="none"},false)'> 
+Text Analytics</a>
+
+<br>
+<p>
+Drag this link onto your bookmarks bar to bookmark it. Clicking on it will create an analytics box<br>
+with z-index 1000. Click on the box to close it.
+</p>
+
+<!--
+<script>
+
+// FROM http://www.mediacollege.com/internet/javascript/text/count-words.html <3
+function countWords(s){
+	if(!s || s==="") return 0;
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+	return s.split(' ').length;
+}
+
+var txtanalyze= function() {
+	if(window.getSelection) {
+		return [countWords(window.getSelection().toString()),window.getSelection().toString().length];
+	}
+	return [0,0];
+};
+
+var abox=document.createElement("div");
+abox.setAttribute("style","position:fixed;left:5%;top:5%;width:110px;height:auto;font-size:14px;z-index:1000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 2px 4px;");
+abox.setAttribute("id","analyticsbox");
+
+var analyticValues=txtanalyze();
+abox.appendChild(document.createTextNode("WC: "+analyticValues[0]+" words \n\rChars: "+analyticValues[1]));
+document.body.appendChild(abox);
+abox.addEventListener("click", function(){abox.style.display="none";}, false); 
+
+</script>-->
