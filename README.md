@@ -1,4 +1,4 @@
-DevAnalytics
+DevBookmarklets
 =========================
 
 Bookmarklets for development and other purposes
