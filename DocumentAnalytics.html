@@ -1,13 +1,13 @@
 
 
-<a href = 'javascript:if(abox){abox.style.display="none"}var abox=document.createElement("div");abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height: auto;font-size:14px;z-index:1000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");abox.setAttribute("id","analyticsbox");var testbox=document.createElement("div");testbox.setAttribute("style","position:fixed;left:0%;top:0%;width:100%;height:100%;background:transparent;opacity:0;z-index:0;");testbox.setAttribute("id","analyticstest");document.body.appendChild(testbox);abox.appendChild(document.createTextNode("BoxW: "+testbox.offsetWidth+"px\nBoxH: "+testbox.offsetHeight+"px\nWidth: "+document.body.clientWidth+"px\nHeight: "+document.body.clientHeight+"px"));document.body.appendChild(abox);testbox.style.display="none";abox.addEventListener("click",function(){abox.style.display="none"},false)
+<a href = 'javascript:if(abox){abox.style.display="none"}var abox=document.createElement("div");abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height: auto;font-size:14px;z-index:10000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");abox.setAttribute("id","analyticsbox");var testbox=document.createElement("div");testbox.setAttribute("style","position:fixed;left:0%;top:0%;width:100%;height:100%;background:transparent;opacity:0;z-index:0;");testbox.setAttribute("id","analyticstest");document.body.appendChild(testbox);abox.appendChild(document.createTextNode("BoxW: "+testbox.offsetWidth+"px\nBoxH: "+testbox.offsetHeight+"px\nWidth: "+document.body.clientWidth+"px\nHeight: "+document.body.clientHeight+"px"));document.body.appendChild(abox);testbox.style.display="none";abox.addEventListener("click",function(){abox.style.display="none"},false)
 '> 
 Document Analytics</a>
 
 <br>
 <p>
 Drag this link onto your bookmarks bar to bookmark it. Clicking on it will create an analytics box<br>
-with z-index 1000. Click on the box to close it.
+with z-index 10000. Click on the box to close it.
 </p>
 
 
@@ -18,7 +18,7 @@ if(abox){
 }
 
 var abox=document.createElement("div");
-abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height: auto;font-size:14px;z-index:1000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");
+abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height: auto;font-size:14px;z-index:10000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");
 abox.setAttribute("id","analyticsbox");
 
 var testbox=document.createElement("div");
