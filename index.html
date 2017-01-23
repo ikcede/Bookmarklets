@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookmarklets</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:600i|Montserrat|Lato:100" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/theme.css" media="screen">
+</head>
+<body>
+
+<div class="top-left corner-section">
+    <span class="title"><a class="plain-link" href="http://ikcede.github.io">ikcede.github.io</a></span>
+</div>
+
+<div id="wrapper">
+    <main>
+
+        <h1>Bookmarklets</h1>
+
+        <p>A compilation of bookmarklets. To use, drag the link to your bookmarks bar.</p>
+
+        <div class="line-break"></div>
+
+            <!-- Change font bookmarklet -->
+            <a href='javascript:(function(){for(var e=prompt("Enter the new font-family name:"),t=document.getElementsByTagName("*"),n=0;n<t.length;n++)t[n].style.fontFamily=e})();
+            '>Change All Font</a>
+
+            <p>This bookmarklet changes all the font on a page by setting a style attribute on every element.
+                It's useful for reading articles that use too thin of a font.</p>
+
+            <p>When choosing a new font, be careful to type in the name of the font correctly.</p>
+
+        <div class="line-break"></div>
+
+            <!-- Safe Browsing -->
+            <!--<a href = 'javascript:if(abox){abox.style.display="none"}var abox=document.createElement("div");abox.setAttribute("style","    color:black;    position:fixed;    left:5%;    top:5%;    width:520px;    height:auto;    font-size:14px;    z-index:1000;    background:white;    border-radius:5px;    border:1px solid black;    opacity:1;    padding:10px 10px 10px 10px;    box-shadow:0px 0px 3px silver;    font-family:sans-serif;");abox.setAttribute("id","safebrowingbox");abox.appendChild(document.createTextNode("Site to test:"));abox.appendChild(document.createElement("br"));var aboxInput=document.createElement("input");aboxInput.setAttribute("style","    min-width:400px;    text-align:left;    background-color: #fff;    border: 1px solid #ccc;    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);    display: inline-block;    height: 20px;    padding: 4px 6px;    margin-bottom: 10px;    font-size: 14px;    line-height: 20px;    color: #555;    vertical-align: middle;    -webkit-border-radius: 4px;    -moz-border-radius: 4px;    border-radius: 4px;    float:left;    margin-left:15px;");aboxInput.setAttribute("id","safebrowingboxInput");aboxInput.setAttribute("placeholder","Enter site URL here");if(window.getSelection){aboxInput.setAttribute("value",window.getSelection())}abox.appendChild(aboxInput);var aboxClose=document.createElement("div");aboxClose.setAttribute("style","    color:black;    position:absolute;    right:5px;    top:5px;    width:auto;    font-size:14px;    text-align:right;    font-family:sans-serif;    cursor:pointer;");aboxClose.appendChild(document.createTextNode("X"));aboxClose.setAttribute("id","safebrowingboxClose");abox.appendChild(aboxClose);var aboxSubmit=document.createElement("button");aboxSubmit.setAttribute("style","float:left;");aboxSubmit.appendChild(document.createTextNode("Test"));aboxSubmit.setAttribute("id","safebrowingboxSubmit");abox.appendChild(aboxSubmit);var aboxClear=document.createElement("button");aboxClear.setAttribute("style","float:left;");aboxClear.appendChild(document.createTextNode("Clear"));aboxClear.setAttribute("id","safebrowingboxSubmit");abox.appendChild(aboxClear);document.body.appendChild(abox);aboxClose.addEventListener("click",function(){abox.style.display="none"},false);var aboxParse=function(e){var t=document.createElement("a");t.href=e;console.log(t);return t.hostname};var aboxSubmitEvent=function(){window.open("http://www.google.com/safebrowsing/diagnostic?site="+aboxParse(aboxInput.value))};aboxSubmit.addEventListener("click",aboxSubmitEvent,false);aboxInput.onkeypress=function(e){var e=window.event||e;if(e.keyCode==13){aboxSubmitEvent()}};aboxClear.addEventListener("click",function(){aboxInput.value=""},false)
+            '>
+            Safe Browsing</a>
+
+            <p>This bookmarklet creates a popup you can use to test the safety of urls.
+                Testing a url will open up Google's transparency report of that page.</p> -->
+
+            <!-- Text analytics -->
+            <a href = 'javascript:function countWords(a){if(!a||a==="")return 0;a=a.replace(/(^\s*)|(\s*$)/gi,"");a=a.replace(/[ ]{2,}/gi," ");a=a.replace(/\n /,"\n");return a.split(" ").length}if(abox){abox.style.display="none"}var txtanalyze=function(){if(window.getSelection){return[countWords(window.getSelection().toString()),window.getSelection().toString().length]}return[0,0]};var abox=document.createElement("div");abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height:auto;font-size:14px;z-index:10000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");abox.setAttribute("id","analyticsbox");var analyticValues=txtanalyze();abox.appendChild(document.createTextNode("WC: "+analyticValues[0]+" words \n\rChars: "+analyticValues[1]));document.body.appendChild(abox);abox.addEventListener("click",function(){abox.style.display="none"},false)
+            '>
+            Text Analytics</a>
+
+            <p>After selecting a section of text, running this bookmarklet will return info on
+                how many words you selected and how many characters are in that word.</p>
+
+    </main>
+</div>
+</body>
+</html>
