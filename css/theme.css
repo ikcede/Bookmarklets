@@ -60,6 +60,18 @@ h3 {
     margin-bottom:15px;
 }
 
+figure {
+    border: 1px solid darkgrey;
+    padding:2px;
+    margin-left:0;
+    display:inline-block;
+}
+
+figcaption {
+    text-align:center;
+    font-size:0.8em;
+}
+
 /* From homepage */
 .top-left, .top-right, .bottom-left, .bottom-right {
     position:fixed;

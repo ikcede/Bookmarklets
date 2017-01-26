@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css?family=Cormorant:600i|Montserrat|Lato:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:600i|Lato:100" rel="stylesheet">
 
     <link rel="stylesheet" href="css/theme.css" media="screen">
 </head>
@@ -37,12 +37,30 @@
         <div class="line-break"></div>
 
             <!-- Safe Browsing -->
-            <!--<a href = 'javascript:if(abox){abox.style.display="none"}var abox=document.createElement("div");abox.setAttribute("style","    color:black;    position:fixed;    left:5%;    top:5%;    width:520px;    height:auto;    font-size:14px;    z-index:1000;    background:white;    border-radius:5px;    border:1px solid black;    opacity:1;    padding:10px 10px 10px 10px;    box-shadow:0px 0px 3px silver;    font-family:sans-serif;");abox.setAttribute("id","safebrowingbox");abox.appendChild(document.createTextNode("Site to test:"));abox.appendChild(document.createElement("br"));var aboxInput=document.createElement("input");aboxInput.setAttribute("style","    min-width:400px;    text-align:left;    background-color: #fff;    border: 1px solid #ccc;    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);    display: inline-block;    height: 20px;    padding: 4px 6px;    margin-bottom: 10px;    font-size: 14px;    line-height: 20px;    color: #555;    vertical-align: middle;    -webkit-border-radius: 4px;    -moz-border-radius: 4px;    border-radius: 4px;    float:left;    margin-left:15px;");aboxInput.setAttribute("id","safebrowingboxInput");aboxInput.setAttribute("placeholder","Enter site URL here");if(window.getSelection){aboxInput.setAttribute("value",window.getSelection())}abox.appendChild(aboxInput);var aboxClose=document.createElement("div");aboxClose.setAttribute("style","    color:black;    position:absolute;    right:5px;    top:5px;    width:auto;    font-size:14px;    text-align:right;    font-family:sans-serif;    cursor:pointer;");aboxClose.appendChild(document.createTextNode("X"));aboxClose.setAttribute("id","safebrowingboxClose");abox.appendChild(aboxClose);var aboxSubmit=document.createElement("button");aboxSubmit.setAttribute("style","float:left;");aboxSubmit.appendChild(document.createTextNode("Test"));aboxSubmit.setAttribute("id","safebrowingboxSubmit");abox.appendChild(aboxSubmit);var aboxClear=document.createElement("button");aboxClear.setAttribute("style","float:left;");aboxClear.appendChild(document.createTextNode("Clear"));aboxClear.setAttribute("id","safebrowingboxSubmit");abox.appendChild(aboxClear);document.body.appendChild(abox);aboxClose.addEventListener("click",function(){abox.style.display="none"},false);var aboxParse=function(e){var t=document.createElement("a");t.href=e;console.log(t);return t.hostname};var aboxSubmitEvent=function(){window.open("http://www.google.com/safebrowsing/diagnostic?site="+aboxParse(aboxInput.value))};aboxSubmit.addEventListener("click",aboxSubmitEvent,false);aboxInput.onkeypress=function(e){var e=window.event||e;if(e.keyCode==13){aboxSubmitEvent()}};aboxClear.addEventListener("click",function(){aboxInput.value=""},false)
+            <a href = 'javascript:!function(){var e=document.createElement("div");e.setAttribute("style","        color:black;        position:fixed;        left:5%;        top:5%;        width:420px;        height:auto;        font-size:14px;        z-index:1000;        background:white;        border:1px solid darkgray;        opacity:1;        padding:10px 10px 10px 10px;        box-shadow:1px 1px 3px silver;        font-family:sans-serif;"),e.setAttribute("id","safebrowingbox");var t=document.createElement("div"),i=document.createElement("strong");i.innerHTML="Safe Browsing Bookmarklet",i.setAttribute("style","font-size:16px;font-family:sans;");var n=document.createElement("p");n.innerHTML="Paste the entire url of the site to test into the input:",t.appendChild(i),t.appendChild(n),e.appendChild(t);var o=document.createElement("input");o.setAttribute("style","        min-width:400px;        text-align:left;        background-color: #fff;        border:none;        display: inline-block;        padding: 4px 5px 4px 5px;        margin-bottom: 10px;        font-size: 14px;        line-height: 20px;        color: #555;        vertical-align: middle;        border-bottom:2px solid #666;        font-family:Arial, sans-serif;        font-size:14px;"),o.setAttribute("id","safebrowingboxInput"),o.setAttribute("placeholder","Enter Site URL Here"),window.getSelection&&o.setAttribute("value",window.getSelection()),e.appendChild(o);var r=document.createElement("div");r.setAttribute("style","        color:black;        position:absolute;        right:6px;        top:5px;        width:auto;        font-size:14px;        text-align:right;        font-family:Arial, sans-serif;        cursor:pointer;"),r.appendChild(document.createTextNode("X")),r.setAttribute("id","safebrowingboxClose"),e.appendChild(r);var d=document.createElement("div"),a=document.createElement("button");a.setAttribute("style","float:left;        margin-right:5px;        width:40px;        border:1px solid gray;        border-radius:none;        background:white;        cursor:pointer;"),a.appendChild(document.createTextNode("Test")),a.setAttribute("id","safebrowingboxSubmit"),d.appendChild(a);var l=document.createElement("button");l.setAttribute("style","float:left;        margin-right:5px;        width:45px;        border:1px solid gray;        border-radius:none;        background:white;        cursor:pointer;"),l.appendChild(document.createTextNode("Clear")),l.setAttribute("id","safebrowingboxSubmit"),d.appendChild(l),e.appendChild(d),document.body.appendChild(e),r.addEventListener("click",function(){e.style.display="none"},!1);var s=function(e){var t=document.createElement("a");return t.href=e,t.hostname},p=function(){window.open("http://www.google.com/safebrowsing/diagnostic?site="+s(o.value))};a.addEventListener("click",p,!1),o.onkeypress=function(e){var e=window.event||e;13==e.keyCode&&p()},l.addEventListener("click",function(){o.value=""},!1)}();
             '>
             Safe Browsing</a>
 
             <p>This bookmarklet creates a popup you can use to test the safety of urls.
-                Testing a url will open up Google's transparency report of that page.</p> -->
+                Testing a url will open up Google's transparency report of that page.</p>
+
+            <figure>
+                <img src="img/safebrowsing1.png"
+                    alt="A picture of the safebrowsing bookmarklet."/>
+                <figcaption>
+                    Screenshot of the bookmarklet.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/safebrowsing2.png"
+                    alt="A screenshot of google's web transparency page." />
+                <figcaption>
+                    Screenshot of the Google's Transparency Report.
+                </figcaption>
+            </figure>
+
+        <div class="line-break"></div>
 
             <!-- Text analytics -->
             <a href = 'javascript:function countWords(a){if(!a||a==="")return 0;a=a.replace(/(^\s*)|(\s*$)/gi,"");a=a.replace(/[ ]{2,}/gi," ");a=a.replace(/\n /,"\n");return a.split(" ").length}if(abox){abox.style.display="none"}var txtanalyze=function(){if(window.getSelection){return[countWords(window.getSelection().toString()),window.getSelection().toString().length]}return[0,0]};var abox=document.createElement("div");abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height:auto;font-size:14px;z-index:10000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");abox.setAttribute("id","analyticsbox");var analyticValues=txtanalyze();abox.appendChild(document.createTextNode("WC: "+analyticValues[0]+" words \n\rChars: "+analyticValues[1]));document.body.appendChild(abox);abox.addEventListener("click",function(){abox.style.display="none"},false)
