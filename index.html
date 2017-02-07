@@ -34,6 +34,14 @@
 
             <p>When choosing a new font, be careful to type in the name of the font correctly.</p>
 
+            <figure>
+                <img src="img/changefont1.png"
+                    alt="A screenshot of the prompt to change all fonts."/>
+                <figcaption>
+                    Screenshot of the change font prompt.
+                </figcaption>
+            </figure>
+
         <div class="line-break"></div>
 
             <!-- Safe Browsing -->
@@ -63,13 +71,24 @@
         <div class="line-break"></div>
 
             <!-- Text analytics -->
-            <a href = 'javascript:function countWords(a){if(!a||a==="")return 0;a=a.replace(/(^\s*)|(\s*$)/gi,"");a=a.replace(/[ ]{2,}/gi," ");a=a.replace(/\n /,"\n");return a.split(" ").length}if(abox){abox.style.display="none"}var txtanalyze=function(){if(window.getSelection){return[countWords(window.getSelection().toString()),window.getSelection().toString().length]}return[0,0]};var abox=document.createElement("div");abox.setAttribute("style","color:black;position:fixed;left:5%;top:5%;width:110px;height:auto;font-size:14px;z-index:10000;background:white;border-radius:5px;border:1px solid black;padding:5px 2px 5px 4px;");abox.setAttribute("id","analyticsbox");var analyticValues=txtanalyze();abox.appendChild(document.createTextNode("WC: "+analyticValues[0]+" words \n\rChars: "+analyticValues[1]));document.body.appendChild(abox);abox.addEventListener("click",function(){abox.style.display="none"},false)
-            '>
+            <a href = 'javascript:!function(){function e(e){return e&&""!==e?(e=e.trim(),e=e.replace(/\s+/gi," "),e=e.replace(/[^a-zA-Z0-9 ]/gi,""),e.split(" ")):0}var t=function(t){var n=e(t)||[],r=t.length;if(0==n.length)return null;var i=0;n.forEach(function(e){i+=e.length}),i/=n.length;var o=n.reduce(function(e,t){return e.length<=t.length?e:t}),a=n.reduce(function(e,t){return e.length>=t.length?e:t});return{wordCount:n.length,charCount:r,minWord:o,maxWord:a,avgLen:i}},n=document.createElement("div");n.setAttribute("style","color:black;        position:fixed;        left:5%;        top:5%;        width:150px;        height:auto;        font-size:14px;        z-index:10000;        background:white;        border-radius:0px;        border:1px solid grey;        padding:5px 2px 5px 4px;"),n.setAttribute("id","analyticsbox");var r="";window.getSelection&&(r=window.getSelection().toString());var i=t(r),o=document.createElement("div");o.setAttribute("style","margin:5px;        font-family:serif;        line-height:1.2em;        font-size:16px;"),null==i?o.innerHTML="No text selected.<br/>Select some text and click the bookmark to run text analysis.":(o.innerHTML="Words: "+i.wordCount+"<br/>",o.innerHTML+="Chars: "+i.charCount+"<br/><br/>",o.innerHTML+="<span>Advanced Lengths</span><br/><br/>",o.innerHTML+="Avg Word: "+i.avgLen+"<br/>",o.innerHTML+="Min Word: "+i.minWord.length+"<br/>",o.innerHTML+="Max Word: "+i.maxWord.length+"<br/>"),n.appendChild(o);var a=document.createElement("div");a.setAttribute("style","        color:black;        position:absolute;        right:6px;        top:5px;        width:auto;        font-size:14px;        text-align:right;        font-family:Arial, sans-serif;        cursor:pointer;"),a.appendChild(document.createTextNode("X")),a.setAttribute("id","textAnalyticsClose"),n.appendChild(a),a.addEventListener("click",function(){n.style.display="none"},!1),document.body.appendChild(n)}();
+                '>
             Text Analytics</a>
 
             <p>After selecting a section of text, running this bookmarklet will return info on
-                how many words you selected and how many characters are in that word.</p>
+                how many words you selected and how many characters are in that word. Also included
+                are the average length of a word in the selection and the length of the smallest and
+                largest words. Character count includes punctuation and apostraphes, but word count
+                does not.
+            </p>
 
+            <figure>
+                <img src="img/textanalytics1.png"
+                    alt="A screenshot of text analytics bookmarklet." />
+                <figcaption>
+                    Screenshot of the Text Analytics bookmarklet.
+                </figcaption>
+            </figure>
     </main>
 </div>
 </body>
